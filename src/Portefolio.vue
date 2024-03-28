@@ -49,7 +49,7 @@
   <style scoped>
   .portfolio {
     background-color: #ECE5D9;
-    padding: 30px;
+    padding: 50px;
     font-family: Lora;}
 
    h1 {
@@ -91,20 +91,19 @@
 
     .text {
       margin : 4%;
+      margin-bottom: 0px;
     }
 
     button {
-      background-color: #69bde7;
-      color: #ECE5D9;
+      background-color: #ECE5D9;
+      color: #000000;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
-      margin: 4px 2px;
       cursor: pointer;
-      border-radius: 12px;
-      margin-top : 50px;
+      border-radius: 40px;
       margin-left : 50px;
     }
 

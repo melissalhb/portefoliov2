@@ -1,18 +1,52 @@
 <template>
- <section id="Education"> 
-    <p>test</p>
+ <section id="Education">
+    <div class = "header">
+    <h2>
+        <img :src="cap" alt="school cap" width="50px" height="50px">
+        Education
+    </h2>
+    <img :src="resume" alt="Cool resume text">
+
+</div>
  </section>
 </template>
 
 <script>
+import cap from 'C:/Users/mella/Documents/portefoliov2/src/assets/cap.svg'
+import resume from 'C:/Users/mella/Documents/portefoliov2/src/assets/resume.png'
+
+export default {
+    name: 'Education',
+    data() {
+        return {
+            cap,
+            resume,
+        }
+    }
+};
 
 </script>
 
 <style scoped>
     section {
         background-color: #F2B6D6;
-        padding: 100px;
+        height : 100vh;
+        width : 100vw;
+        padding :30px;
         font-family: Lora;
-        text-align: center;
+        }
+
+    h2 {
+        font-family: 'Brasika Display';
+        font-size: 48px;
+        position : relative;
+        margin : 4%;
+        }
+
+    img {
+        display : flex;
+        float : left;
+        margin-right : 35px;
+        margin-top : 15px;
         }
 </style>
