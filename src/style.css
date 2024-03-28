@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Brasika Display';
+  src: url('src/assets/fonts/brasika-display-trial.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url(src/assets/fonts/Lora-VariableFont_wght.ttf) format('truetype');
+}
+
+body {
+  padding : 50px;
+}
