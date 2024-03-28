@@ -4,16 +4,17 @@
       <!-- Ajoutez ici le contenu principal de votre portefolio, comme vos projets, compétences, etc. -->
       <body>
         <div class="content">
-          <div class="test">
+          <div class="text">
         <h1> Hello ! <br>
           I'm <a>Melissa Lacheb</a>
         </h1>
-      </div>
+        <p>I'm a student in computer engineering at EFREI Paris.</p>
+        </div>
       <div class="image">
         <img :src="myPic" alt="Beautiful picture of myself" />
-        <img :src="Elipse" alt="Elipse" />
       </div>
-      </div>
+        </div>
+        <button @click="scroll"> Get to know me </button>
     </body>
     </section>
 </template>
@@ -21,6 +22,8 @@
   <script>
   import myPic from './assets/profile_pic.png'
   import Elipse from './assets/elipse.png'
+  import Education from './Education.vue'
+
   export default {
     name: 'Portfolio',
     data() {
@@ -28,13 +31,22 @@
         myPic,
         Elipse
       }
+    },
+
+    components :{
+      Education
+    },
+
+    methods : {
+      scroll() {
+        const Education = document.getElementById('Education');
+        Education.scrollIntoView({behavior: 'smooth'});
+            }
     }
-  }
+  };
   </script>
   
   <style scoped>
-  /* Ajoutez des styles CSS spécifiques au contenu principal ici */
-
   .portfolio {
     background-color: #ECE5D9;
     padding: 30px;
@@ -43,10 +55,9 @@
    h1 {
     font-family: 'Brasika Display';
     font-size : 56px;
-    margin : 110px;
     margin-top : 10%;
-    margin-right : 10px;
-   }
+     }
+
    a {
   
     background-image: linear-gradient(to right,#f5af19, #f57119, #f111c0, #b719f5, #116bf1, #b719f5, #f111c0, #f57119, #f5af19);
@@ -79,7 +90,27 @@
     }
 
     .text {
-      display : flex;
-      float : left;
+      margin : 4%;
     }
+
+    button {
+      background-color: #69bde7;
+      color: #ECE5D9;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      margin-top : 50px;
+      margin-left : 50px;
+    }
+
+    p {
+      font-family: 'inter';
+      font-size : 20px;
+    }
+
   </style>

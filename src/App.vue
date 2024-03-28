@@ -3,6 +3,7 @@
   <div id="app">
     <Header/>
     <Portfolio/>
+    <Education/>
     <Footer/>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Footer from './Footer.vue'
 import Header from './Hearder.vue'
 import Portfolio from './Portefolio.vue'
+import Education from './Education.vue'
 
 
 export default {
@@ -18,6 +20,7 @@ export default {
   components: {
     Header,
     Portfolio,
+    Education,
     Footer
   }
 }
