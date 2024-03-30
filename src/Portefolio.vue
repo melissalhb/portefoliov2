@@ -15,14 +15,16 @@
       </div>
         </div>
         <button @click="scroll"> Get to know me </button>
+        <button id = "CV"> Download my CV ^^ </button>
     </body>
     </section>
 </template>
   
   <script>
-  import myPic from './assets/profile_pic.png'
+  /*import myPic from './assets/profile_pic.png'*/
   import Elipse from './assets/elipse.png'
   import Education from './Education.vue'
+  import myPic from 'C:/Users/mella/Documents/portefoliov2/src/assets/profile_picture.png'
 
   export default {
     name: 'Portfolio',
@@ -50,7 +52,9 @@
   .portfolio {
     background-color: #ECE5D9;
     padding: 50px;
-    font-family: Lora;}
+    font-family: Lora;
+    height : 80vh;  
+  }
 
    h1 {
     font-family: 'Brasika Display';
@@ -60,7 +64,7 @@
 
    a {
   
-    background-image: linear-gradient(to right,#f5af19, #f57119, #f111c0, #b719f5, #116bf1, #b719f5, #f111c0, #f57119, #f5af19);
+    background-image: linear-gradient(45deg,#f5af19, #f57119, #f111c0, #b719f5, #116bf1, #b719f5, #f111c0, #f57119, #f5af19);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -112,4 +116,9 @@
       font-size : 20px;
     }
 
+    .CV {
+      color: #f111c0;
+    }
+
   </style>
+

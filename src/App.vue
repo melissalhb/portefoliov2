@@ -33,9 +33,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ECE5D9;
+  width : 100vw;
+  overflow-x: hidden;
 
 }
-
+  
 #app {
   display: flex;
   flex-direction: column;

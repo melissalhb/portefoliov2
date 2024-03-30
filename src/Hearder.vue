@@ -4,7 +4,7 @@
       
       <nav class="nav">
         <div class="logo">
-        <img src="C:\Users\mella\Documents\portefoliov2\src\assets\starburst-four-point-icon.svg" alt="Starburst icon" />
+        <img src="..\src\assets\starburst-four-point-icon.svg" alt="Starburst icon" />
         <h1> Melissa Lacheb </h1>
       </div>
         <ul>
@@ -27,6 +27,7 @@
     background-color: #ECE5D9;
     padding: 1rem;
     font-family: Lora;
+    width : 100vw;
   }
 
   ul {
