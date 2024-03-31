@@ -22,7 +22,6 @@
   
   <script>
   /*import myPic from './assets/profile_pic.png'*/
-  import Elipse from './assets/elipse.png'
   import Education from './Education.vue'
   import myPic from 'C:/Users/mella/Documents/portefoliov2/src/assets/profile_picture.png'
 
@@ -31,7 +30,6 @@
     data() {
       return {
         myPic,
-        Elipse
       }
     },
 
@@ -108,7 +106,7 @@
       font-size: 16px;
       cursor: pointer;
       border-radius: 40px;
-      margin-left : 50px;
+      margin :50px;
     }
 
     p {
